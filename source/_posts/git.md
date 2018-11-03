@@ -19,7 +19,12 @@
 <font size=“22pt” color="blue">local&nbsp;&nbsp;&nbsp;&nbsp;remote</font>
 <font size=“14pt”>1.git remote add origin ___
 2.git push -u origin master/git push origin master
-3.git rm origin</font>
+3.git remote remove origin
+4.删掉的文件同步到github
+git add -A
+它能stages所有文件，而之前用的
+git add .
+只能stages新文件和被修改文件，没有被删除文件</font>
 <font size=“22pt” color="blue">RemoteA&nbsp;&nbsp;&nbsp;&nbsp;RemoteB</font>
 <font size=“14pt”>1.fork
 2.PR</font>
