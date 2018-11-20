@@ -3,7 +3,7 @@
 <font size=“14pt”>1.git add file
 2.git commit -m "    "
 3.git reset HEAD^（版本区）
-4.gut checkout -- flie（丢弃工作区的修改）
+4.gut checkout -- flie（丢弃工作区的修改/其实是用版本库里的版本替换工作区的版本）
 5.rm（工作区）
 6.git rm （版本区）
 7.git diff HEAD （工作区、版本区 比较）
@@ -37,4 +37,21 @@ step1 手动改 step2 add commit
 deva 先merge master1 先push Remote
 devb 后merge master2 后push×
 step1 B pull Remote step2 push</font>
+
+多人协作
+你从远程仓库克隆时，Git自动把本地的master和远程的master分支对应
+查看远程仓库的信息
+git remote/git remote -v（显示抓取（fetch）和推送(push)的地址）
+git push origin master
+git push origin dev
+小伙伴在另一台电脑克隆（他把钥匙添加到github了，就有权限push了）
+他只看得到你的项目的master分支，他要在dev分支上开发 git checkout -b dev
+git add env.txt
+git commit -m "add env"
+git push origin dev
+冲突：没有指定本地dev分支与远程origin/dev分支的链接
+git branch --set-upstream-to=origin/dev dev
+git pull
+手动改了以后，git commit，git push origin dev
+
 
