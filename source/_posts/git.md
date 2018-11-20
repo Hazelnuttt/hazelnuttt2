@@ -2,7 +2,7 @@
 <font size=“22pt” color="blue">Working Directory&nbsp;&nbsp;&nbsp;&nbsp;Stage&nbsp;&nbsp;&nbsp;&nbsp;Master</font>
 <font size=“14pt”>1.git add file
 2.git commit -m "    "
-3.git reset HEAD^
+3.git reset HEAD^（版本区）
 4.gut checkout -- flie（丢弃工作区的修改）
 5.rm（工作区）
 6.git rm （版本区）
