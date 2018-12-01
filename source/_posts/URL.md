@@ -1,3 +1,9 @@
+---
+title: URL
+date: 2018-10-27
+categories: 
+- 笔记
+---
 <font color="blue">URL(Uniform Resource Location)</font>:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;统一资源定位器 网页地址的意思
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每个网页都有只属于自己发URL地址（我们俗称网址）具有全球唯一性

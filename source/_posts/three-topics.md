@@ -1,3 +1,9 @@
+---
+title: three topics
+date: 2018-11-01
+categories: 
+- 笔记
+---
 <font size="36pt">度娘Super Fast</font>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首页包大小gzip后只有11.1k左右。耗时也就是500多毫秒
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首页是没有js和css外链的，不然会再发起多次请求。其他的首屏所需要的js与css，全部在上线前，编译时，编译内联至HTML中

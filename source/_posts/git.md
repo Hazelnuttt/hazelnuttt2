@@ -1,3 +1,10 @@
+---
+title: git笔记
+date: 2018-10-27
+tags: git
+categories:
+- 笔记 
+---
 <font size="36pt">WORKFLOW</font>
 <font size=“22pt” color="blue">Working Directory&nbsp;&nbsp;&nbsp;&nbsp;Stage&nbsp;&nbsp;&nbsp;&nbsp;Master</font>
 <font size=“14pt”>1.git add file
