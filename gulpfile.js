@@ -27,7 +27,12 @@ gulp.task('scripts',function(){
 // Images
 gulp.task('images',function(){
   return gulp.src('./public/asset an image/**/*')
-    .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
+    .pipe(imagemin({
+      optimizationLevel: 3,
+      progressive: true,
+      interlaced: true,
+      multipass: true
+     }))
     .pipe(gulp.dest('dist/img'))
     .pipe(notify({ message: 'Images task complete' }));
 });
