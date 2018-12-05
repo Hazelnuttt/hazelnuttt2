@@ -5,6 +5,9 @@ tags: gulp
 categories:
 - 笔记 
 ---
+# 前端开发
+除了HTML+CSS+Javascript,需要提高效率，减少重复工作
+自动化工具
 # 我用到的5个基本的
 task、watch、src、dest、run
 # 插件
