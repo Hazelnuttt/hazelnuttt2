@@ -12,28 +12,26 @@ var gulp = require('gulp'),
 gulp.task('styles',function(){
   return gulp.src('./public/**/*.css')
     .pipe(minifycss())
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('./public'))
     .pipe(notify({message:'Styles task complete'}));
 });
 // Scripts
 gulp.task('scripts',function(){
   return gulp.src('./public/**/*js')
-    .pipe(concat('all.js'))
-    .pipe(gulp.dest('dist/js'))
-    .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
+    .pipe(gulp.dest('./public'))
     .pipe(notify({message:'Scripts task complete'}));
 });
 // Images
 gulp.task('images',function(){
-  return gulp.src('./public/asset-an-image/**/*')
+  return gulp.src('./public/**/*.{png,jpg,gif,svg,JPG}')
     .pipe(imagemin({
       optimizationLevel: 3,
       progressive: true,
       interlaced: true,
       multipass: true
      }))
-    .pipe(gulp.dest('dist/img'))
+    .pipe(gulp.dest('./public'))
     .pipe(notify({ message: 'Images task complete' }));
 });
 // Html
@@ -49,20 +47,9 @@ gulp.task('html',function(){
       minifyJS: true,//压缩页面JS
       minifyCSS: true,//压缩页面CSS
     }))
-    .pipe(gulp.dest('dist/html'))
+    .pipe(gulp.dest('./public'))
     .pipe(notify({ message: 'Html task complete'}));
 });
-//Clean
-gulp.task('clean',function(cb){
-  del(['dist/css','dist/js','dist/img'],cb)
-});
-//Watch
-gulp.task('watch',function(){
-  gulp.watch('./public/**/*.css',['styles'])
-  gulp.watch('./public/**/*js',['scripts'])
-  gulp.watch('./public/asset an image/**/*',['images'])
-  livereload.listen()
-  gulp.watch('dist/**').on('change',livereload.changed)
-});
+
 
 
