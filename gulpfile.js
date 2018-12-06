@@ -50,6 +50,7 @@ gulp.task('html',function(){
     .pipe(gulp.dest('./public'))
     .pipe(notify({ message: 'Html task complete'}));
 });
-
+// Default task
+gulp.task('default',['scripts','styles','images','html'])
 
 
