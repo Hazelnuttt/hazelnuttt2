@@ -26,7 +26,7 @@ gulp.task('scripts',function(){
 });
 // Images
 gulp.task('images',function(){
-  return gulp.src('./public/asset an image/**/*')
+  return gulp.src('./public/asset-an-image/**/*')
     .pipe(imagemin({
       optimizationLevel: 3,
       progressive: true,
