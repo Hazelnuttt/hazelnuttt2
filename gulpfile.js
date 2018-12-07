@@ -36,7 +36,7 @@ gulp.task('images',function(){
 });
 // Html
 gulp.task('html',function(){
-  return gulp.src('./public/index.html')
+  return gulp.src('./public/**/*.html')
     .pipe(htmlmin({
       removeComments: true,//清除HTML注释
       collapseWhitespace: true,//压缩HTML
