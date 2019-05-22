@@ -4,11 +4,11 @@
 
 # Site
 title: Hexo
-subtitle:
+subtitle: Hazelnuttt's personal blog
 description:
 keywords:
 author: Hazelnuttt
-language:
+language: zh-CN
 timezone:
 
 # URL
@@ -81,3 +81,10 @@ deploy:
   type: git
   repo: git@github.com:Hazelnuttt/Hazelnuttt.github.io.git
   branch: master
+
+#
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000

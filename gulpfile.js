@@ -12,15 +12,15 @@ var gulp = require('gulp'),
 gulp.task('styles',function(){
   return gulp.src('./public/**/*.css')
     .pipe(minifycss())
-    .pipe(gulp.dest('./public'))
-    .pipe(notify({message:'Styles task complete'}));
+    .pipe(gulp.dest('./public'));
+    // .pipe(notify({message:'Styles task complete'}));
 });
 // Scripts
 gulp.task('scripts',function(){
-  return gulp.src('./public/**/*js')
+  return gulp.src('./public/**/*.js')
     .pipe(uglify())
-    .pipe(gulp.dest('./public'))
-    .pipe(notify({message:'Scripts task complete'}));
+    .pipe(gulp.dest('./public'));
+    // .pipe(notify({message:'Scripts task complete'}));
 });
 // Images
 gulp.task('images',function(){
@@ -31,12 +31,12 @@ gulp.task('images',function(){
       interlaced: true,
       multipass: true
      }))
-    .pipe(gulp.dest('./public'))
-    .pipe(notify({ message: 'Images task complete' }));
+    .pipe(gulp.dest('./public'));
+    // .pipe(notify({ message: 'Images task complete' }));
 });
 // Html
 gulp.task('html',function(){
-  return gulp.src('./public/**/*.html')
+  return gulp.src(['./public/**/*.html','./public/**/*.xml' ])
     .pipe(htmlmin({
       removeComments: true,//清除HTML注释
       collapseWhitespace: true,//压缩HTML
@@ -47,8 +47,8 @@ gulp.task('html',function(){
       minifyJS: true,//压缩页面JS
       minifyCSS: true,//压缩页面CSS
     }))
-    .pipe(gulp.dest('./public'))
-    .pipe(notify({ message: 'Html task complete'}));
+    .pipe(gulp.dest('./public'));
+    // .pipe(notify({ message: 'Html task complete'}));
 });
 // Default task
 gulp.task('default',['scripts','styles','images','html'])
