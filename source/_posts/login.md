@@ -1,7 +1,7 @@
 ---
 title: login
 date: 2019-7-15
-tags: React
+tags: react
 categories:
   - 笔记
 ---
