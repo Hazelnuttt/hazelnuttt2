@@ -1,5 +1,5 @@
 ---
-title: react
+title: react_install
 date: 2019-5-22
 tags: react
 categories:

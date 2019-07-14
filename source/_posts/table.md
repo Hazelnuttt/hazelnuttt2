@@ -1,5 +1,5 @@
 ---
-title: react
+title: react_Table
 date: 2019-5-22
 tags: react
 categories:
@@ -55,7 +55,7 @@ this.setState({
 
 - ![key](/asset-an-image/key.png)
 - ![selectedRowkeys](/asset-an-image/selectedRowkeys.png)
-- ![rowKey](/asset-an-image/rowKey.pn)
+- ![rowKey](/asset-an-image/rowKey.png)
 
 #### `key`和`rowKey`是一个东西
 
