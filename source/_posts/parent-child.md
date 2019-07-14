@@ -14,7 +14,7 @@ categories:
 
 1. class&function
    class 里必须是`this.props.name`
-   ![1](/asset-an-image/l.png)
+   ![1](/asset-an-image/1.png)
    ![2](/asset-an-image/2.png)
    function component 里是`props.name`
    ![3](/asset-an-image/3.png)
